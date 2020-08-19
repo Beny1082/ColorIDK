@@ -28,3 +28,17 @@ ul#list-nav {
   body {
       background-color: lightseagreen;
   }
+
+
+  .right{
+    float: right;
+  }
+
+  .left{
+    float: left;
+  }
+
+  .image{
+    length:50px;
+    widows: 75px;
+  }
