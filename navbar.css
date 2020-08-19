@@ -8,7 +8,12 @@ ul#list-nav {
   ul#list-nav li {
     display:inline
   }
-
+  div {
+    text-align: center;
+    border-width: 15px;
+    border-radius: 20px;
+    text-indent: 100%;
+  }
   ul#list-nav li a {
     text-decoration:none;
     padding:5px 0;
