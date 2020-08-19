@@ -12,12 +12,13 @@ ul#list-nav {
   ul#list-nav li a {
     text-decoration:none;
     padding:5px 0;
-    width:100px;
+    width:150px;
     background:#455a46;
     color:#eee;
     float:left;
     text-align:center;
   border-left:1px solid #fff;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    }
 
    ul#list-nav li a:hover {
