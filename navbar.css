@@ -35,15 +35,7 @@ ul#list-nav {
   }
 
 
-  .right{
-    float: right;
-  }
-
-  .left{
-    float: left;
-  }
-
-  .image{
-    length:50px;
-    widows: 75px;
+img {
+    width: 30px;
+    height: 50px;
   }
