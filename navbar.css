@@ -29,10 +29,24 @@ ul#list-nav {
   body {
       background-color: lightseagreen;
   }
+#blue {
+width: 300px;
+height:auto;
+border: 5px solid;
+border-radius:2px solid;
+text-align:center;
+float:center;
+margin:10px;
 
+}
 
 img {
+<<<<<<< HEAD
     width: 30%;
     height: 30%;
     float: left;
+=======
+    width: 500px;
+    height: 600px;
+>>>>>>> 8593c70b82b9a4cfc99b9004bf43c63c367d46f3
   }
