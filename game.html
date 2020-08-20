@@ -2,7 +2,7 @@
 <html lang="en">
 ​
 <head>
-
+ 
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,62 +20,71 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <title>Game</title>
+    <link rel="stylesheet" href="navbar.css">
 </head>
 ​
 <body>
+    
+    <ul id="list-nav">
+        <li><a href="collaboration.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="game.html">Game</a></li>
+      </ul>
+
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="https://picsum.photos/200" alt="First slide">
+                <img class="d-block w-100" src="https://thumbs.dreamstime.com/b/st-petersburg-russia-april-early-spring-landscape-lot-garbage-trash-ground-spring-106177653.jpg" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Day 1: You find trash on the ground, do you pick it up or do you leave it there. </h5>
-                    <button>Leave it there</button>
-                    <button>Pick it up</button>
+                    <button class = "playerChoice1" value = "wrong1">Leave it there</button>
+                    <button class = "playerChoice1" value = "correct1">Pick it up</button>
+                    
                 </div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100"
-                    src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    src="https://img.redbull.com/images/c_crop,x_0,y_0,h_3668,w_5502/c_fill,w_1790,h_1193/q_auto,f_auto/redbullcom/2016/01/27/1331773230339_2/it-can-be-tricky-to-fit-a-bike-into-a-car-neatly..jpg"
                     alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5> Day 2: The school that you're going to is two blocks away, are you going to drive or bike?</h5>
-                    <button>Drive</button>
-                    <button>Bike</button>
+                    <button class = "playerChoice2" value = "wrong2">Drive</button>
+                    <button class = "playerChoice2" value = "correct2">Bike</button>
                 </div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100"
-                    src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    src="https://bloximages.chicago2.vip.townnews.com/poststar.com/content/tncms/assets/v3/editorial/a/96/a96ba65c-9088-5b50-ac02-87a8ddcb5997/58b8a59f5e52d.image.jpg"
                     alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5> Day 3: You are checking out items at a grocery store and you forgot you're reusable bag in the car, do you use the plastic one or go get it</h5>
-                    <button>Go get the reusable bag</button>
-                    <button>Use the plastic one</button>
+                    <button class = "playerChoice3" value = "wrong3">Go get the reusable bag</button>
+                    <button class = "playerChoice3" value = "correct3">Use the plastic one</button>
                 </div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100"
-                    src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    src="https://grist.org/wp-content/uploads/2017/08/ocean-plastic.jpg"
                     alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5> Day 4: You see your friend eating food near the Ocean and his trash gets blown by the wind into the surf, do you go get it or leave it there</h5>
-                    <button>Go get the reusable bag</button>
-                    <button>Use the plastic one</button>
+                    <button class = "playerChoice4" value = "wrong4">Go get it</button>
+                    <button class = "playerChoice4" value = "correct4">Leave it there</button>
                 </div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100"
-                    src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTwUVT9RzQeP_LnxMDSgWU6Ftxyxf0dA2-ZCA&usqp=CAU"
                     alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>  Day 5: one of your siblings leaves the house and the light in there room is still on</h5>
-                    <button>Leave the light on</button>
+                    <buttonclass class = "playerChoice5" value = "correct5">Leave the light on</button>
                     <button>Turn it off to preserve energy</button>
                 </div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100"
-                    src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    src="https://www.billygo.com/wp-content/uploads/2019/08/bigstock-Man-Washing-And-Cleaning-Her-H-292086409.jpg"
                     alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>  Day 6: You are using a local bathroom and you notice that a person leaving has left the sink on, should you leave it running water or turn the handle off.</h5>
@@ -85,7 +94,7 @@
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100"
-                    src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    src="https://www.garageliving.com/blog/wp-content/uploads/2018/04/baeumler-garage-36.jpg"
                     alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>  Day 7:You notice that you're neighbor’s car has been left running inside of there open garage, should you let it be or let them know that it is running</h5>
@@ -95,7 +104,7 @@
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100"
-                    src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    src="https://i2-prod.chroniclelive.co.uk/incoming/article14481418.ece/ALTERNATES/s615/IRR_NEC_010418litter_02.jpg"
                     alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>  Day 8:You're the last one on the bus about to be home at you're bus stop. You have just got done eating your snack and there is no garbage on the bus.</h5>
@@ -105,7 +114,7 @@
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100"
-                    src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    src="https://i.ytimg.com/vi/yyPCWrX-h8U/maxresdefault.jpg"
                     alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>  Day 9:You are at a restaurant and you have forgotten you're reusable straw, the waitress comes over with your soda that has a plastic straw on the side</h5>
@@ -115,7 +124,7 @@
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100"
-                    src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    src="https://arboristnow-gallery.s3.amazonaws.com/blog_photos/main_photo/blog_1530992525.jpeg"
                     alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>  Day 10:You overhear your parents talking about getting the tree taken down in the backyard.</h5>
@@ -135,6 +144,53 @@
     </div>
 ​
     <!-- Optional JavaScript -->
+    <script type="text/javascript">
+
+$(".playerChoice1").on("click", function() {
+    var yourPick = $(this).val();
+
+    if (yourPick == "correct1") {
+        alert ("You are saving the environment!")
+    }
+    else {
+        alert ("Did you know that according to a recent survey, 90% of Americans litter. Did you know that littering not only hurts the lives of animals, but also affects clean water and sewage systems, leading to dirty water and unsanitary living conditions. Next time you see trash on the ground, please pick it up")
+    }
+}
+)
+$(".playerChoice2").on("click", function() {
+    var yourPick = $(this).val();
+
+    if (yourPick == "correct2") {
+        alert ("You are saving the environment!")
+    }
+    else {
+        alert ("Cars pollute the environment everyday releasing carbon monoxide into the ozone which can eventually lead to extreme global warming.Please take a bike when you have a chance, especially when you are only two block away")
+    }
+}
+)
+$(".playerChoice3").on("click", function() {
+    var yourPick = $(this).val();
+
+    if (yourPick == "correct3") {
+        alert ("You are saving the environment!")
+    }
+    else {
+        alert ("Plastic bags can take anywhere from 450 to 1000 years to break down in the environment leaving them to take up large amounts of space for a long period of time. Along with this, when plastic breaks down it releases dangerous toxins that can contaminate soil, and animals can also ingest them.Please bring a reusable bag when going to the grocery store or any store that requires you to use a bag.")
+    }
+}
+)
+$(".playerChoice4").on("click", function() {
+    var yourPick = $(this).val();
+
+    if (yourPick == "correct4") {
+        alert ("You are saving the environment!")
+    }
+    else {
+        alert ("Trash and human products in the Ocean can seriously affect aquatic animals and overall marine life. An estimated 14 billions pound of trash are in the ocean as of right now. Please make sure to keep our oceans clean and clean up after yourself.")
+    }
+}
+)
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 ​
 </body>
