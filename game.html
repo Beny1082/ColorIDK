@@ -29,7 +29,7 @@
         <li><a href="aboutus.html">About Us</a></li>
         <li><a href="game.html">Game</a></li>
       </ul>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="https://thumbs.dreamstime.com/b/st-petersburg-russia-april-early-spring-landscape-lot-garbage-trash-ground-spring-106177653.jpg" alt="First slide">
@@ -75,9 +75,9 @@
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTwUVT9RzQeP_LnxMDSgWU6Ftxyxf0dA2-ZCA&usqp=CAU"
                     alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>  Day 5: one of your siblings leaves the house and the light in there room is still on</h5>
-                    <buttonclass class = "playerChoice5" value = "correct5">Leave the light on</button>
-                    <button>Turn it off to preserve energy</button>
+                    <h5>  Day 5: One of your siblings leaves the house and the light in there room is still on</h5>
+                    <button class = "playerChoice5" value = "wrong5">Leave the light on</button>
+                    <button class = "playerChoice5" value = "correct5">Turn it off to preserve energy</button>
                 </div>
             </div>
             <div class="carousel-item">
@@ -86,8 +86,8 @@
                     alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>  Day 6: You are using a local bathroom and you notice that a person leaving has left the sink on, should you leave it running water or turn the handle off.</h5>
-                    <button>Leave it running</button>
-                    <button>Turn the handle off</button>
+                    <button class = "playerChoice6" value = "wrong6">Leave it running</button>
+                    <button class = "playerChoice6" value = "correct6">Turn the handle off</button>
                 </div>
             </div>
             <div class="carousel-item">
@@ -96,8 +96,8 @@
                     alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>  Day 7:You notice that you're neighbor’s car has been left running inside of there open garage, should you let it be or let them know that it is running</h5>
-                    <button>Let it be and let the car keep idle</button>
-                    <button>Alert you're neighbor of this</button>
+                    <button class = "playerChoice7" value = "wrong7">Let it be and let the car keep idle</button>
+                    <button class = "playerChoice7" value = "correct7">Alert you're neighbor of this</button>
                 </div>
             </div>
             <div class="carousel-item">
@@ -106,8 +106,8 @@
                     alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>  Day 8:You're the last one on the bus about to be home at you're bus stop. You have just got done eating your snack and there is no garbage on the bus.</h5>
-                    <button>Should you throw trash out the window</button>
-                    <button>Put it in your backpack and throw it out later.</button>
+                    <button  class = "playerChoice8" value = "wrong8">Should you throw trash out the window</button>
+                    <button  class = "playerChoice8" value = "correct8">Put it in your backpack and throw it out later.</button>
                 </div>
             </div>
             <div class="carousel-item">
@@ -116,8 +116,8 @@
                     alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>  Day 9:You are at a restaurant and you have forgotten you're reusable straw, the waitress comes over with your soda that has a plastic straw on the side</h5>
-                    <button>Drink the soda with the straw</button>
-                    <button>Ask the watress for a recycable, paper straw.</button>
+                    <button class = "playerChoice9" value = "wrong9">Drink the soda with the straw</button>
+                    <button class = "playerChoice9" value = "correct9">Ask the watress for a recycable, paper straw.</button>
                 </div>
             </div>
             <div class="carousel-item">
@@ -126,8 +126,8 @@
                     alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>  Day 10:You overhear your parents talking about getting the tree taken down in the backyard.</h5>
-                    <button>Convince them that this probably isn't such a good idea</button>
-                    <button>Don't bother intervening</button>
+                    <button class = "playerChoice10" value = "wrong10">Convince them that this probably isn't such a good idea</button>
+                    <button class = "playerChoice10" value = "wrong10">Don't bother intervening</button>
                 </div>
             </div>
         </div>
@@ -144,11 +144,17 @@
     <!-- Optional JavaScript -->
     <script type="text/javascript">
 
+var correctQ = 0;
+
+
+
+
 $(".playerChoice1").on("click", function() {
     var yourPick = $(this).val();
 
     if (yourPick == "correct1") {
         alert ("You are saving the environment!")
+        correctQ = correctQ + 10;
     }
     else {
         alert ("Did you know that according to a recent survey, 90% of Americans litter. Did you know that littering not only hurts the lives of animals, but also affects clean water and sewage systems, leading to dirty water and unsanitary living conditions. Next time you see trash on the ground, please pick it up")
@@ -160,6 +166,7 @@ $(".playerChoice2").on("click", function() {
 
     if (yourPick == "correct2") {
         alert ("You are saving the environment!")
+        correctQ = correctQ + 10;
     }
     else {
         alert ("Cars pollute the environment everyday releasing carbon monoxide into the ozone which can eventually lead to extreme global warming.Please take a bike when you have a chance, especially when you are only two block away")
@@ -171,6 +178,7 @@ $(".playerChoice3").on("click", function() {
 
     if (yourPick == "correct3") {
         alert ("You are saving the environment!")
+        correctQ = correctQ + 10;
     }
     else {
         alert ("Plastic bags can take anywhere from 450 to 1000 years to break down in the environment leaving them to take up large amounts of space for a long period of time. Along with this, when plastic breaks down it releases dangerous toxins that can contaminate soil, and animals can also ingest them.Please bring a reusable bag when going to the grocery store or any store that requires you to use a bag.")
@@ -182,10 +190,84 @@ $(".playerChoice4").on("click", function() {
 
     if (yourPick == "correct4") {
         alert ("You are saving the environment!")
+        correctQ = correctQ + 10;
     }
     else {
         alert ("Trash and human products in the Ocean can seriously affect aquatic animals and overall marine life. An estimated 14 billions pound of trash are in the ocean as of right now. Please make sure to keep our oceans clean and clean up after yourself.")
     }
+}
+)
+$(".playerChoice5").on("click", function() {
+    var yourPick = $(this).val();
+
+    if (yourPick == "correct5") {
+        alert ("You are saving the environment!")
+        correctQ = correctQ + 10;
+    }
+    else {
+        alert ("Trash and human products in the Ocean can seriously affect aquatic animals and overall marine life. An estimated 14 billions pound of trash are in the ocean as of right now. Please make sure to keep our oceans clean and clean up after yourself.")
+    }
+}
+)
+$(".playerChoice6").on("click", function() {
+    var yourPick = $(this).val();
+
+    if (yourPick == "correct6") {
+        alert ("You are saving the environment!")
+        correctQ = correctQ + 10;
+    }
+    else {
+        alert ("Trash and human products in the Ocean can seriously affect aquatic animals and overall marine life. An estimated 14 billions pound of trash are in the ocean as of right now. Please make sure to keep our oceans clean and clean up after yourself.")
+    }
+}
+)
+$(".playerChoice7").on("click", function() {
+    var yourPick = $(this).val();
+
+    if (yourPick == "correct7") {
+        alert ("You are saving the environment!")
+        correctQ = correctQ + 10;
+    }
+    else {
+        alert ("Trash and human products in the Ocean can seriously affect aquatic animals and overall marine life. An estimated 14 billions pound of trash are in the ocean as of right now. Please make sure to keep our oceans clean and clean up after yourself.")
+    }
+}
+)
+$(".playerChoice8").on("click", function() {
+    var yourPick = $(this).val();
+
+    if (yourPick == "correct8") {
+        alert ("You are saving the environment!")
+        correctQ = correctQ + 10;
+    }
+    else {
+        alert ("Trash and human products in the Ocean can seriously affect aquatic animals and overall marine life. An estimated 14 billions pound of trash are in the ocean as of right now. Please make sure to keep our oceans clean and clean up after yourself.")
+    }
+}
+)
+$(".playerChoice9").on("click", function() {
+    var yourPick = $(this).val();
+
+    if (yourPick == "correct9") {
+        alert ("You are saving the environment!")
+        correctQ = correctQ + 10;
+    }
+    else {
+        alert ("Trash and human products in the Ocean can seriously affect aquatic animals and overall marine life. An estimated 14 billions pound of trash are in the ocean as of right now. Please make sure to keep our oceans clean and clean up after yourself.")
+    }
+}
+)
+$(".playerChoice10").on("click", function() {
+    var yourPick = $(this).val();
+
+    if (yourPick == "correct10") {
+        alert ("You are saving the environment!")
+        correctQ = correctQ + 10;
+    }
+    else {
+        alert ("Trash and human products in the Ocean can seriously affect aquatic animals and overall marine life. An estimated 14 billions pound of trash are in the ocean as of right now. Please make sure to keep our oceans clean and clean up after yourself.")
+    }
+    alert ("You got " + correctQ + "%")
 }
 )
     </script>
