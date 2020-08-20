@@ -36,6 +36,7 @@ ul#list-nav {
 
 
 img {
-    width: 30px;
-    height: 50px;
+    width: 30%;
+    height: 30%;
+    float: left;
   }
