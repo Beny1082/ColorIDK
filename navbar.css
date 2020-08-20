@@ -29,3 +29,9 @@ ul#list-nav {
   body {
       background-color: lightseagreen;
   }
+
+
+img {
+    width: 30px;
+    height: 50px;
+  }
