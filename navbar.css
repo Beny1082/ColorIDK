@@ -33,12 +33,13 @@ ul#list-nav {
 width: 300px;
 height:auto;
 border: 5px solid;
-border-radius:2px solid;
+border-radius:2px;
 text-align:center;
 float:center;
 margin:10px;
 
 }
+<<<<<<< HEAD
 
 h5 {
   background-color: black;
@@ -51,3 +52,5 @@ img {
     width: 500px;
     height: 600px;
   }
+=======
+>>>>>>> 0934018b1928c3a83e38607dc6c633b60fd8d557
