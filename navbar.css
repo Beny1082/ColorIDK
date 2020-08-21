@@ -34,13 +34,10 @@ ul#list-nav {
 width: 300px;
 height:auto;
 border: 5px solid;
-border-color: white;
-border-radius:20px;
+
 text-align:center;
 float:center;
 margin:auto;
-
-
 }
 .textbox {
   border: 5px solid #a2b3a1;
@@ -48,3 +45,5 @@ margin:auto;
   color: #455a46;
   background-color: black;
 }
+
+
