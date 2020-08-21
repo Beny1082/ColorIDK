@@ -27,7 +27,8 @@ ul#list-nav {
     color:#000
   }
   body {
-      background-color: lightseagreen;
+      background-image: url(https://previews.123rf.com/images/msmoloko/msmoloko1703/msmoloko170300059/73330859-bright-green-background-with-tropical-plants-seamless-vector-exotic-pattern-with-phoenix-palm-leaves.jpg);
+      background-size: auto;
   }
 #blue {
 width: 300px;
@@ -41,4 +42,9 @@ margin:auto;
 
 
 }
-
+.textbox {
+  border: 5px solid #a2b3a1;
+  border-radius: 30px;
+  color: #455a46;
+  background-color: black;
+}
